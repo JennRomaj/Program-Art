@@ -9,6 +9,10 @@ public partial class About : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        
+    }
+    protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+    {
+        Response.Write("<script language=javascript>child=window.open('Cronometro.aspx');</script>");
     }
 }

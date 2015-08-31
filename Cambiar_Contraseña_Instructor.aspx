@@ -1,7 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="Cambiar_Contraseña_Admin.aspx.cs" Inherits="Cambiar_Contraseña" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="Cambiar_Contraseña_Instructor.aspx.cs" Inherits="Cambiar_Contraseña_Instructor" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" Runat="Server">
     <style type="text/css">
+
 
 
 
@@ -23,16 +24,16 @@
             color: #000000;
             text-align: center;
         }
-        .style17
-        {
-            text-align: left;
-        }
         .style14
         {
             color: #000000;
             font-size: small;
             font-family: Arial;
             text-align: right;
+        }
+        .style17
+        {
+            text-align: left;
         }
         </style>
 </asp:Content>
@@ -57,12 +58,8 @@
                     Text="Contraseña actual:" Width="150px"></asp:Label>
             </td>
             <td class="style17">
-                <asp:TextBox ID="TextBox1" runat="server" CssClass="style17" Height="25px" 
+                <asp:TextBox ID="TextBox2" runat="server" CssClass="style17" Height="25px" 
                     Width="150px" TextMode="Password"></asp:TextBox>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
-                    ControlToValidate="TextBox1" ErrorMessage="*" 
-                    style="color: #FF0000; font-family: Arial; font-size: small" 
-                    ValidationGroup="Necesario"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -71,12 +68,8 @@
                     Text="Nueva contraseña:" Width="150px"></asp:Label>
             </td>
             <td class="style17">
-                <asp:TextBox ID="TextBox2" runat="server" CssClass="style17" Height="25px" 
+                <asp:TextBox ID="TextBox3" runat="server" CssClass="style17" Height="25px" 
                     Width="150px" TextMode="Password"></asp:TextBox>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
-                    ControlToValidate="TextBox2" ErrorMessage="*" 
-                    style="color: #FF0000; font-family: Arial; font-size: small" 
-                    ValidationGroup="Necesario"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -85,17 +78,8 @@
                     Text="Confirmar contraseña:" Width="150px"></asp:Label>
             </td>
             <td class="style17">
-                <asp:TextBox ID="TextBox3" runat="server" CssClass="style17" Height="25px" 
+                <asp:TextBox ID="TextBox4" runat="server" CssClass="style17" Height="25px" 
                     Width="150px" TextMode="Password"></asp:TextBox>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
-                    ControlToValidate="TextBox3" ErrorMessage="*" 
-                    style="color: #FF0000; font-family: Arial; font-size: small" 
-                    ValidationGroup="Necesario"></asp:RequiredFieldValidator>
-                <asp:CompareValidator ID="CompareValidator1" runat="server" 
-                    ControlToCompare="TextBox2" ControlToValidate="TextBox3" 
-                    ErrorMessage="Las contraseñas no coinciden" 
-                    style="color: #FF0000; font-family: Arial; font-size: small" 
-                    ValidationGroup="Necesario"></asp:CompareValidator>
             </td>
         </tr>
         <tr>

@@ -4,10 +4,12 @@
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
-    <h2>
-        Acerca de
-    </h2>
     <p>
-        Coloque contenido aquí.
+        &nbsp;</p>
+<p>
+        <asp:ImageButton ID="ImageButton1" runat="server" onclick="ImageButton1_Click" 
+            style="width: 14px" />
     </p>
+<p>
+        &nbsp;</p>
 </asp:Content>
